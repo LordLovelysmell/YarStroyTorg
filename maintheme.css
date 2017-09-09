@@ -1,0 +1,237 @@
+/* Override  */
+.selector-for-some-widget {
+  box-sizing: content-box;
+} 
+
+body {
+	font-family: 'OpenSans';
+	font-size: 1.25rem;
+}
+
+body > div {
+	transition: all 0.3s ease;
+}
+
+body.wall-background {
+	background-image: url(img/background.png);
+}
+
+.jumbotron-bgcolor {
+	/*background-color: rgba(200, 199, 255, 0.85);*/
+	background: linear-gradient(to top, rgba(209, 214, 220, 0.86), rgba(202, 221, 242, 1) 80%, rgba(132, 177, 225, 1));
+	border-bottom: 1px solid grey;
+	box-sizing: border-box;
+}
+
+.jumbotron-bg-img {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	   -moz-box-orient: vertical;
+	   -moz-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	background: url(img/header-bg4.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
+h1.main-headline {
+	font-family: 'Merriweather', sans-serif;
+	font-size: 2.75rem;
+	font-weight: 500;
+	color: #353645;
+	margin-top: 100px;
+}
+
+h2.main-headline {
+	font-family: 'Merriweather', sans-serif;
+	font-size: 2.5rem;
+	font-weight: 400;
+}
+
+.description-headline {
+	font-family: 'Merriweather', sans-serif;
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+a.more-about {
+	font-size: 80%;
+	padding: 10px;
+	border-bottom: 1px dashed black;
+	border-left: 1px dashed black;
+	border-right: 1px dashed black;
+	box-sizing: border-box;
+}
+
+a.more-about:hover {
+	background-color: white;
+}
+
+.more-about a:vizited {
+	color: black;
+}
+
+.more-about a:active {
+	color: black;
+}
+
+/*.description-headline span:hover {
+	text-decoration: underline;
+}*/
+
+span.bg-color {
+	display: block;
+	padding: 0 2% 10px 2%;
+	background-color: rgba(48, 48, 48, 1);
+	color: white;
+}
+
+span.company-name {
+	display: block;
+	color: rgba(179, 55, 55, 1);
+	font-family: 'Lobster', sans-serif;
+	font-size: 3rem;
+	padding: 0 0 0 25px;
+}
+
+.logo {
+	display: block;
+	color: rgba(179, 55, 55, 1);
+	font-family: 'Lobster', sans-serif;
+	font-size: 1.5rem;
+}
+
+blockquote {
+	margin: 0;
+	background: white;
+	border-top: 5px solid rgba(179, 55, 55, 1);
+	border-bottom: 5px solid rgba(179, 55, 55, 1);
+	color: #3A3C55;
+	padding: 30px 30px 30px 90px;
+	position: relative;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+blockquote:before {
+	content: "\201C";
+	font-family: serif;
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	color: white;
+	background: #FB6652;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	font-size: 50px;
+	line-height: 1.35;
+	text-align: center;
+}
+blockquote p {
+	margin: 0 0 16px;
+	font-size: 22px;
+	letter-spacing: .05em;
+	line-height: 1.4;
+}
+blockquote cite {
+	font-style: normal;
+}
+
+.social-button {
+	width: 2rem;
+}
+
+.phone-icon {
+	height: 75px;
+}
+
+div.phone-number {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 500;
+	text-decoration: underline;
+	margin-top: 30px;
+}
+
+.phone-number a:link, a:visited {
+	color: black;
+}
+
+.detailed {
+	display: block;
+	box-shadow: 4px 6.928px 29px 0 rgba(216,27,4,.4);
+	-webkit-box-shadow: 4px 6.928px 29px 0 rgba(216,27,4,.4);
+	-moz-box-shadow: 4px 6.928px 29px 0 rgba(216,27,4,.4);
+	display: table;
+	margin: 0 auto 34px;
+	padding: 30px 80px;
+	background-color: rgba(179, 55, 55, 1);
+	font-size: 1.5rem;
+	color: #fff;
+	border-radius: 25px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.detailed:hover {
+	color: #fff;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	transition: all 0.5s ease;
+}
+
+.building {
+	margin-top: 150px;
+}
+
+.callback-form {
+	margin: 25px;
+}
+
+.catalog {
+	border-bottom: 3px solid rgba(179, 55, 55, 1);
+}
+
+img.standart-card {
+	overflow: hidden;
+}
+
+div.my-card {
+	margin-bottom: 10px;
+}
+
+.standart-card img {
+	-webkit-filter: brightness(65%);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+.standart-card:hover {
+  -webkit-filter: brightness(110%);
+}
+
+.card a {
+	background: rgba(179, 55, 55, 1);
+	text-decoration: none;
+}
+
+.card {
+	border: 25px solid white;
+	border-image: url(img/photo-texture1.jpg) 30 round round;
+	box-sizing: border-box;
+}
+
+.card-body {
+	background-image: url(img/polaroid-texture3.jpg);
+}
