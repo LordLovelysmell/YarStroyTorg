@@ -13,7 +13,7 @@ body > div {
 }
 
 body.wall-background {
-	background-image: url(img/background.png);
+	background-image: url(img/concrete-seamless.png);
 }
 
 .jumbotron-bgcolor {
@@ -175,7 +175,7 @@ div.phone-number {
 	margin: 0 auto 34px;
 	padding: 30px 80px;
 	background-color: rgba(179, 55, 55, 1);
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	color: #fff;
 	border-radius: 25px;
 	font-family: 'Open Sans', sans-serif;
@@ -230,8 +230,12 @@ div.my-card {
 	border: 25px solid white;
 	border-image: url(img/photo-texture1.jpg) 30 round round;
 	box-sizing: border-box;
+	box-shadow: 4px 6.928px 29px 0 black;
 }
 
 .card-body {
 	background-image: url(img/polaroid-texture3.jpg);
+	border-bottom: 1px dashed grey;
+	border-left: 1px dashed grey;
+	border-right: 1px dashed grey;
 }
