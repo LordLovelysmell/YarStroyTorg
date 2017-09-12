@@ -123,10 +123,6 @@ span.company-name {
 	font-size: 1.5rem;
 }
 
-span {
-	outline-color: white;
-}
-
 a:visited {
 	color: black;
 }
@@ -318,7 +314,7 @@ footer {
 }
 
 .footer-b2 {
-	
+
 }
 
 @media screen and (max-width: 575px) {
