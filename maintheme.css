@@ -6,6 +6,7 @@
 body {
 	font-family: 'OpenSans';
 	font-size: 1.25rem;
+	overflow-x: hidden;
 }
 
 body > div {
@@ -14,6 +15,10 @@ body > div {
 
 body.wall-background {
 	background-image: url(img/concrete-seamless.png);
+}
+
+.jumbotron {
+	margin-top: 50px;
 }
 
 .jumbotron-bgcolor {
@@ -43,18 +48,29 @@ body.wall-background {
 	        background-size: cover;
 }
 
-h1.main-headline {
+h1,div.main-headline {
 	font-family: 'Merriweather', sans-serif;
 	font-size: 2.75rem;
 	font-weight: 500;
 	color: #353645;
-	margin-top: 100px;
+	margin-bottom: 3%;
 }
 
 h2.main-headline {
 	font-family: 'Merriweather', sans-serif;
 	font-size: 2.5rem;
 	font-weight: 400;
+	text-align: center;
+}
+
+h2.secondary-headline {
+	font-family: 'Merriweather', sans-serif;
+	font-size: 2.5rem;
+	font-weight: 500;
+	color: #fff;
+	text-shadow: black 2px 2px 0px;
+	padding: 2%;
+	text-align: center;
 }
 
 .description-headline {
@@ -96,18 +112,28 @@ span.bg-color {
 }
 
 span.company-name {
-	display: block;
 	color: rgba(179, 55, 55, 1);
 	font-family: 'Lobster', sans-serif;
 	font-size: 3rem;
-	padding: 0 0 0 25px;
 }
 
 .logo {
-	display: block;
 	color: rgba(179, 55, 55, 1);
 	font-family: 'Lobster', sans-serif;
 	font-size: 1.5rem;
+}
+
+span {
+	outline-color: white;
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	color: black;
+	text-decoration: none;
 }
 
 blockquote {
@@ -151,15 +177,16 @@ blockquote cite {
 }
 
 .phone-icon {
-	height: 75px;
+	height: 35px;
 }
 
 div.phone-number {
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	font-weight: 500;
 	text-decoration: underline;
-	margin-top: 30px;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
 .phone-number a:link, a:visited {
@@ -168,10 +195,9 @@ div.phone-number {
 
 .detailed {
 	display: block;
-	box-shadow: 4px 6.928px 29px 0 rgba(216,27,4,.4);
-	-webkit-box-shadow: 4px 6.928px 29px 0 rgba(216,27,4,.4);
-	-moz-box-shadow: 4px 6.928px 29px 0 rgba(216,27,4,.4);
-	display: table;
+	box-shadow: 4px 10px 29px 0 rgba(216,27,4,.4);
+	-webkit-box-shadow: 4px 10px 29px 0 rgba(216,27,4,.4);
+	-moz-box-shadow: 4px 10px 29px 0 rgba(216,27,4,.4);
 	margin: 0 auto 34px;
 	padding: 30px 80px;
 	background-color: rgba(179, 55, 55, 1);
@@ -179,6 +205,7 @@ div.phone-number {
 	color: #fff;
 	border-radius: 25px;
 	font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
 }
 
 .detailed:hover {
@@ -189,9 +216,7 @@ div.phone-number {
 	transition: all 0.5s ease;
 }
 
-.building {
-	margin-top: 150px;
-}
+
 
 .callback-form {
 	margin: 25px;
@@ -206,7 +231,7 @@ img.standart-card {
 }
 
 div.my-card {
-	margin-bottom: 10px;
+	margin-bottom: 40px;
 }
 
 .standart-card img {
@@ -240,12 +265,77 @@ div.my-card {
 	border-right: 1px dashed grey;
 }
 
+#sawn-timber-production {
+	padding-top: 50px;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	   -moz-box-orient: vertical;
+	   -moz-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	background: url(img/pilomaterial-bg.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
 
+.carousel-inner {
+	box-sizing: border-box;
+	border: 10px solid white;
+}
 
-@media screen and (max-device-width: 480px) {
+.map {
+	border-top: 2px solid grey;
+	border-bottom: 2px solid grey;
+	height: 400px;
+	box-sizing: border-box;
+}
+
+footer {
+	background: #3b3e43;
+}
+
+.footer-b1 {
+	float: left;
+	padding: 20px 20px;
+}
+
+.footer-desc {
+	padding-top: 40px;
+	text-transform: uppercase;
+	font-family: 'Merriweather', sans-serif;
+	color: grey;
+	padding: 15px 20px;
+}
+
+.footer-b2 {
+	
+}
+
+@media screen and (max-width: 575px) {
+
 	h1.main-headline {
 		font-size: 2.2rem;
 	}
+
+	h2.secondary-headline {
+	font-family: 'Merriweather', sans-serif;
+	font-size: 2rem;
+	font-weight: 500;
+	color: #fff;
+	text-shadow: black 2px 2px 0px;
+	padding: 2%;
+	text-align: center;
+}
 
 	.description-headline {
 		font-size: 1.65rem;
@@ -266,4 +356,22 @@ div.my-card {
 	body {
 		font-size: 100%;
 	}
+
+	p {
+		font-size: 1.25rem;
+	}
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+	.jumbotron {
+		margin-top: 0px;
+	}
+}
+
+@media (min-width: 768px) and (max-device-width: 991px) {
+
+	/*div.company-name {
+		margin-top: 50px;
+	}*/
 }
