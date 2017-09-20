@@ -22,7 +22,6 @@ body.wall-background {
 }
 
 .jumbotron-bgcolor {
-	/*background-color: rgba(200, 199, 255, 0.85);*/
 	background: linear-gradient(to top, rgba(209, 214, 220, 0.86), rgba(202, 221, 242, 1) 80%, rgba(132, 177, 225, 1));
 	border-bottom: 1px solid grey;
 	box-sizing: border-box;
@@ -52,7 +51,6 @@ h1,div.main-headline {
 	font-family: 'Merriweather', sans-serif;
 	font-size: 2.75rem;
 	font-weight: 500;
-	color: #353645;
 	margin-bottom: 3%;
 }
 
@@ -71,6 +69,31 @@ h2.secondary-headline {
 	text-shadow: black 2px 2px 0px;
 	padding: 2%;
 	text-align: center;
+}
+
+h2.house-type {
+	font-family:'Merriweather', sans-serif;
+	font-size: 2rem;
+	
+}
+
+.main, .description, .house-description, .house-full-description {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.description, .house-description, .house-full-description {
+	text-align: justify;
+}
+
+.description {
+	background: rgba(255, 255, 255, 0.5);
+	padding: 20px;
+	border-radius: 25px;
+	box-sizing: border-box;
+}
+
+.read-more-btn {
+	margin-bottom: 35px;
 }
 
 .description-headline {
@@ -99,10 +122,6 @@ a.more-about:hover {
 .more-about a:active {
 	color: black;
 }
-
-/*.description-headline span:hover {
-	text-decoration: underline;
-}*/
 
 span.bg-color {
 	display: block;
@@ -174,10 +193,12 @@ blockquote cite {
 
 .phone-icon {
 	height: 35px;
+	float: left;
+	margin: 10px 10px 10px 0;
 }
 
 div.phone-number {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 1.25rem;
 	font-weight: 500;
 	text-decoration: underline;
@@ -243,8 +264,7 @@ div.my-card {
 }
 
 .card a {
-	background: rgba(179, 55, 55, 1);
-	text-decoration: none;
+
 }
 
 .card {
@@ -317,6 +337,95 @@ footer {
 
 }
 
+#services {
+	padding: 0 0 50px 0;
+}
+
+.service-svg {
+	overflow: hidden;
+	height: 200px;
+}
+
+.icon-block {
+	width: 100%;
+	margin-bottom: 35px;
+}
+
+.icon-block h3 {
+	text-align: center;
+	text-shadow: grey 2px 2px 5px;
+}
+
+.house-number {
+	float:right;
+	color: grey;
+}
+
+.hidden{
+	opacity: 0;
+}
+.visible{
+	opacity: 1;
+}
+
+.name, .review {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5rem;
+}
+
+.name {
+	padding-top: 10px;
+}
+
+.review {
+	position: absolute;
+	font-size: 1.125rem;
+	background-color: white;
+	padding: 10px;
+	border-radius: 15px;
+	box-sizing: border-box;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.review-background {
+	position: relative;
+}
+
+.avatar {
+	display: block;
+	margin: 0 auto;
+	box-sizing: border-box;
+	border-radius: 50%;
+}
+
+.gallery-headline-btn {
+	text-align: center;
+	text-decoration: underline;
+	padding: 20px 30px;
+	width: 100%;
+	font-family: 'Merriweather', sans-serif;
+	margin: 10px 0;
+	border-radius: 25px;
+	box-sizing: border-box;
+	background: linear-gradient(to top, rgba(209, 214, 220, 0.46), rgba(224, 224, 224, 1) 30%, rgba(224, 224, 224, 0.3));
+}
+
+.photo {
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.hide {
+	margin-bottom: 20px;
+}
+
+.about-cont {
+	background: url('img/about-bg.jpg');
+	padding-top: 125px;
+	padding-bottom: 25px;
+}
+
 @media screen and (max-width: 575px) {
 
 	h1.main-headline {
@@ -331,7 +440,7 @@ footer {
 	text-shadow: black 2px 2px 0px;
 	padding: 2%;
 	text-align: center;
-}
+	}
 
 	.description-headline {
 		font-size: 1.65rem;
@@ -357,17 +466,60 @@ footer {
 		font-size: 1.25rem;
 	}
 
+	.review {
+		position: relative;
+		display: inline-block;
+		padding: 10px;
+		margin: 0 auto;
+	}
+
+	.display-xs-none {
+		display: none;
+	}
+
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
 	.jumbotron {
 		margin-top: 0px;
 	}
+
+	.review {
+		position: relative;
+	}
+
+	.review-background {
+		margin-bottom: 50px;
+	}
 }
 
 @media (min-width: 768px) and (max-device-width: 991px) {
+	.review {
+		position: relative;
+	}
 
-	/*div.company-name {
-		margin-top: 50px;
-	}*/
+	.phone-icon {
+		height: 35px;
+		float: left;
+		margin: 10px 10px 10px 0;
+	}
+
+	div.phone-number {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1rem;
+		text-decoration: underline;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+
+	.nav-link {
+		font-size: 1rem;
+	}
+
+}
+
+@media (min-width: 768px) and (max-device-width: 840px) {
+		div.phone-number {
+			display: none;
+		}
 }
