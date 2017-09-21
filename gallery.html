@@ -252,7 +252,7 @@
 			
 
 		<!-- Contact Section Start-->
-		<section class="contacts" style="margin-top: 25px">
+		<section id="contacts" style="margin-top: 25px">
 			<h2 class="main-headline text-sm-center" style="margin-bottom: 20px"><span class="catalog">Мы находимся</span></h2>
 			<div class="map">
 				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acb0ecc6561556f005f63a80cfd54d2fc3dd7ee197e6bf53497510dcea48db10f&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
@@ -299,6 +299,25 @@
 				$('.gallery-headline-btn').click(function() {
 					$(this).next('.row').slideToggle();
 				});
+			});
+		</script>
+
+		<script type="text/javascript" src="js/fancybox/lib/jquery-1.10.2.min.js"></script>
+
+	    <script>
+			$(function() {
+	  			$('a[href*="#"]:not([href="#"])').click(function() {
+	    			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      				var target = $(this.hash);
+	      				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      				if (target.length) {
+	       					 $('html, body').animate({
+	          					scrollTop: target.offset().top
+	        				}, 1000);
+	        				return false;
+	      				}
+	   				}
+	  			});
 			});
 		</script>
 	</body>
