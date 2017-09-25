@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<title>Строительная компания ЯрCтройТорг</title>
+		<title>Строительная компания ЯрCтройТорг - построить дом под ключ, деревянные, каркасные, кирпичные дома, СИП-панели, недорого, построить дачу, баню</title>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="keywords" content="ЯрСтройТорг, Тольятти, построить дом под ключ, баня под ключ, купить дом коттедж, купить коттедж, купить дом, недорогие коттедж купить, дома из бруса недорого, дом брус под ключ, дом сип панель">
+		<meta name="description" content="Уже более 15 лет занимается возведением любых типов домов по Тольятти и Самарской области. Построим под ключ коттедж, дом из бруса, кирпича, сип панелей, каркасные, дома из теплоблока. В спектр услуг также входит баня под ключ, мощение, обустойство ландшафта.">
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 		<!-- My CSS -->
 		<link rel="stylesheet" href="maintheme.css">
+		<link rel="stylesheet" type="text/css" href="animate.css">
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Merriweather:400i,700" rel="stylesheet">
 	 	<link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=cyrillic" rel="stylesheet">  
@@ -19,7 +22,7 @@
 
 	<!-- Navigation Start -->
 	<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-		<a class="navbar-brand" href="#"><span class="logo">ЯрСтройТорг</span></a>
+		<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 		</button>
@@ -94,16 +97,16 @@
 									<h4 class="text-md-center">Заказать звонок</h4>
 									<button class="close" type="button" data-dismiss="modal">×</button>
 								</div>
-							<form class="callback-form">
+							<form class="callback-form" action="send.php" method="post">
 							  <div class="form-group">
 
-							    <label for="modal">Введите Ваше имя:</label>
-							    <input type="text" class="form-control" id="myModal" placeholder="Как Вас зовут?">
+							    <label>Введите Ваше имя:</label>
+							    <input type="text" name="name" class="form-control" id="myModal" placeholder="Как Вас зовут?">
 							    <small id="telHelp" class="form-text text-muted">Мы заботимся о конфиденциальности Ваших данных и не передаем их третьим лицам.</small>
 							  </div>
 							  <div class="form-group">
-							    <label for="exampleInputPassword1">Введите Ваш номер телефона:</label>
-							    <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="+71234567890">
+							    <label">Введите Ваш номер телефона:</label>
+							    <input type="tel" name="number" class="form-control" placeholder="+71234567890">
 							  </div>
 							  <button type="submit" class="btn btn-primary">Свяжитесь со мной</button>
 							</form>
@@ -125,21 +128,21 @@
 
 	<!-- Houses Section Start -->
 	<section id="services" class="container">
-		<h2 class="main-headline text-sm-center"><span class="catalog">Наши услуги</span></h2>
+		<h2 class="main-headline text-sm-center animate-fade"><span class="catalog">Наши услуги</span></h2>
 		<div class="row mt-5">
 			<div class="col-md-4">
-				<div class="icon-block">
+				<div class="icon-block animate-left">
 					<img class="service-svg img-fluid" src="icons/sale.svg" height="300px">
 					<h3>Продажа стройматериалов</h3>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 animate-fade">
 				<div class="icon-block">
-					<img class="service-svg img-fluid" src="img/buildings.svg" height="300px">
+					<img class="service-svg img-fluid" src="icons/buildings.svg" height="300px">
 					<h3>Строительство (домов, бань, заборов)</h3>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 animate-right">
 				<div class="icon-block">
 					<img class="service-svg img-fluid" src="icons/production.svg" height="300px">
 					<h3>Производство пиломатериалов</h3>
@@ -147,15 +150,15 @@
 			</div>
 		</div>
 
-		<h2 class="main-headline text-sm-center" style="margin-top: 25px;"><span class="catalog">Наши преимущества</span></h2>
+		<h2 class="main-headline text-sm-center animate-fade" style="margin-top: 25px;"><span class="catalog">Наши преимущества</span></h2>
 		<div class="row mt-5">
-			<div class="col-md-6">
+			<div class="col-md-6 animate-left">
 				<div class="icon-block">
 					<img class="service-svg img-fluid" src="icons/builder.svg">
 					<h3>Квалифицированная команда</h3>
 				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 animate-right">
 				<div class="icon-block">
 					<img class="service-svg img-fluid" src="icons/bestprice.svg" height="300px">
 					<h3>Собственные стройматериалы по выгодным ценам</h3>
@@ -163,14 +166,14 @@
 			</div>
 		</div>
 		<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-6 animate-left">
 					<div class="icon-block">
 						<img class="service-svg img-fluid" src="icons/clock.svg">
 						<h3>Предоставление рассрочки</h3>
 					</div>
 				</div>
 				<div class="col-md-6">
-					<div class="icon-block">
+					<div class="icon-block animate-right">
 						<img class="service-svg img-fluid" src="icons/guarantee.svg">
 						<h3>Гарантия качества</h3>
 					</div>
@@ -186,7 +189,7 @@
 			<div class="row">
 				<div class="col-md-6 my-card">
 					<div class="card">
-						<img class="card-img-top img-fluid standart-card" src="img/img2.jpg" alt="Card image cap">
+						<img class="card-img-top img-fluid standart-card" src="img/photos/carcass/1.jpg" alt="Card image cap">
 						<div class="card-body">
 							<h4 class="card-title"><span class="catalog">Каркасно-Щитовые</span> дома</h4>
 						</div>
@@ -195,45 +198,36 @@
 
 				<div class="col-md-6 my-card">
 					<div class="card">
-						<img class="card-img-top img-fluid standart-card" src="img/img31.jpg" alt="Card image cap">
+						<img class="card-img-top img-fluid standart-card" src="img/photos/timber/1.jpg" alt="Card image cap">
 						<div class="card-body">
-							<h4 class="card-title"><span class="catalog">Контейнерные</span> дома</h4>
+							<h4 class="card-title"><span class="catalog">Срубовые</span> дома</h4>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-md-6 my-card">
 					<div class="card">
-						<img class="card-img-top img-fluid standart-card" src="img/img41.jpg" alt="Card image cap">
+						<img class="card-img-top img-fluid standart-card" src="img/photos/brick/3.jpg" alt="Card image cap">
 						<div class="card-body">
-							<h4 class="card-title"><span class="catalog">Брусовые</span> дома</h4>
+							<h4 class="card-title"><span class="catalog">Кирпичные</span> дома</h4>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-md-6 my-card">
 					<div class="card">
-						<img class="card-img-top img-fluid standart-card" src="img/img2.jpg" alt="Card image cap">
+						<img class="card-img-top img-fluid standart-card" src="img/photos/panel/1.jpg" alt="Card image cap">
 						<div class="card-body">
-							<h4 class="card-title"><span class="catalog">Каркасно-Щитовые</span> дома</h4>
+							<h4 class="card-title">Дома из <span class="catalog">СИП-панелей</span></h4>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-md-6 my-card">
 					<div class="card">
-						<img class="card-img-top img-fluid standart-card" src="img/img2.jpg" alt="Card image cap">
+						<img class="card-img-top img-fluid standart-card" src="img/photos/heat-block/3.jpg" alt="Card image cap">
 						<div class="card-body">
-							<h4 class="card-title"><span class="catalog">Каркасно-Щитовые</span> дома</h4>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-6 my-card">
-					<div class="card">
-						<img class="card-img-top img-fluid standart-card" src="img/img2.jpg" alt="Card image cap">
-						<div class="card-body">
-							<h4 class="card-title"><span class="catalog">Каркасно-Щитовые</span> дома</h4>
+							<h4 class="card-title">Дома из <span class="catalog">теплоблоков</span></h4>
 						</div>
 					</div>
 				</div>
@@ -279,19 +273,36 @@
 		</div>
 	</section>
 
+	<script type="text/javascript" src="//vk.com/js/api/openapi.js?147"></script>
+
+	<!-- VK Widget -->
+	<div id="vk_community_messages"></div>
+	<script type="text/javascript">
+	VK.Widgets.CommunityMessages("vk_community_messages", 153643599, {expandTimeout: "5000",tooltipButtonText: "Есть вопрос? Смело задавайте!"});
+	</script>
+
 	<footer>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
 					<div class="footer-b1">
-						<a href="#" class="logo">ЯрСтройТорг</a>
+						<a href="index.html" class="logo">ЯрСтройТорг</a>
 					</div>
-					<p class="footer-desc">Строительная<br>компания</p>
+					<p class="footer-desc">Строительная<br>компания
+					<p class="footer-desc">
+					Все права защищены, 2017.
+					</p>
 				</div>
 				<div class="col-md-6 footer-b2 clearfix">
-					<p class="footer-desc">Все права защищены, 2017.</p>
+					<p class="footer-desc">
+						+7 (927) 891-06-78, +7 (848) 261-06-78
+					</p>
+				</div>
+				<div class="col-12">
+					<p class="footer-author">Разработка сайта - <a href="https://vk.com/lordlovelysmell">Д. Добрынин</a></p>
 				</div>
 			</div>
+		</div>
 	</footer>
 
     <!-- Optional JavaScript -->
@@ -303,21 +314,38 @@
 
     <script src="js/fancybox-master/dist/jquery.fancybox.min.js"></script>
 
-    <script>
-		$(function() {
-  			$('a[href*="#"]:not([href="#"])').click(function() {
-    			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      				var target = $(this.hash);
-      				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      				if (target.length) {
-       					 $('html, body').animate({
-          					scrollTop: target.offset().top
-        				}, 2500);
-        				return false;
-      				}
-   				}
-  			});
-		});
-	</script>
+    <script src="js/viewportchecker.js"></script>
+		<script>
+			jQuery(document).ready(function() {
+				jQuery('.animate-right').addClass("hidden").viewportChecker({
+				classToAdd: 'visible animated fadeInRight',
+				offset: 100
+				});
+			});
+		</script>
+		<script>
+			jQuery(document).ready(function() {
+				jQuery('.animate-left').addClass("hidden").viewportChecker({
+				classToAdd: 'visible animated fadeInLeft',
+				offset: 100
+				});
+			});
+		</script>
+		<script>
+			jQuery(document).ready(function() {
+				jQuery('.animate-up').addClass("hidden").viewportChecker({
+				classToAdd: 'visible animated fadeInUp',
+				offset: 100
+				});
+			});
+		</script>
+		<script>
+			jQuery(document).ready(function() {
+				jQuery('.animate-fade').addClass("hidden").viewportChecker({
+				classToAdd: 'visible animated fadeIn',
+				offset: 100
+				});
+			});
+		</script>
   </body>
 </html>

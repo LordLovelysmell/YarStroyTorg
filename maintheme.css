@@ -1,6 +1,7 @@
 /* Override  */
 .selector-for-some-widget {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 } 
 
 body {
@@ -10,6 +11,8 @@ body {
 }
 
 body > div {
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
 
@@ -22,29 +25,25 @@ body.wall-background {
 }
 
 .jumbotron-bgcolor {
+	background: -webkit-gradient(linear, left bottom, left top, from(rgba(209, 214, 220, 0.86)), color-stop(80%, rgba(202, 221, 242, 1)), to(rgba(132, 177, 225, 1)));
+	background: -webkit-linear-gradient(bottom, rgba(209, 214, 220, 0.86), rgba(202, 221, 242, 1) 80%, rgba(132, 177, 225, 1));
+	background: -o-linear-gradient(bottom, rgba(209, 214, 220, 0.86), rgba(202, 221, 242, 1) 80%, rgba(132, 177, 225, 1));
 	background: linear-gradient(to top, rgba(209, 214, 220, 0.86), rgba(202, 221, 242, 1) 80%, rgba(132, 177, 225, 1));
 	border-bottom: 1px solid grey;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 .jumbotron-bg-img {
 	display: -webkit-box;
-	display: -webkit-flex;
-	display: -moz-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	   -moz-box-orient: vertical;
-	   -moz-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
 	background: url(img/header-bg4.jpg) no-repeat center center;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-	     -o-background-size: cover;
-	        background-size: cover;
+	background-size: cover;
 }
 
 h1,div.main-headline {
@@ -89,7 +88,8 @@ h2.house-type {
 	background: rgba(255, 255, 255, 0.5);
 	padding: 20px;
 	border-radius: 25px;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 .read-more-btn {
@@ -108,7 +108,8 @@ a.more-about {
 	border-bottom: 1px dashed black;
 	border-left: 1px dashed black;
 	border-right: 1px dashed black;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 a.more-about:hover {
@@ -222,7 +223,8 @@ div.phone-number {
 	color: #fff;
 	border-radius: 25px;
 	font-family: 'Open Sans', sans-serif;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 .detailed:hover {
@@ -230,6 +232,8 @@ div.phone-number {
 	box-shadow: none;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
 
@@ -254,9 +258,7 @@ div.my-card {
 .standart-card img {
 	-webkit-filter: brightness(65%);
 	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
 	-o-transition: all 1s ease;
-	-ms-transition: all 1s ease;
 	transition: all 1s ease;
 }
 .standart-card:hover {
@@ -269,9 +271,13 @@ div.my-card {
 
 .card {
 	border: 25px solid white;
-	border-image: url(img/photo-texture1.jpg) 30 round round;
-	box-sizing: border-box;
-	box-shadow: 4px 6.928px 29px 0 black;
+	-webkit-border-image: url(img/photo-texture1.jpg) 30 round round;
+	     -o-border-image: url(img/photo-texture1.jpg) 30 round round;
+	        border-image: url(img/photo-texture1.jpg) 30 round round;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-box-shadow: 4px 6.928px 29px 0 black;
+	        box-shadow: 4px 6.928px 29px 0 black;
 }
 
 .card-body {
@@ -286,26 +292,19 @@ div.my-card {
 	border-top: 1px solid grey;
 	border-bottom: 1px solid grey;
 	display: -webkit-box;
-	display: -webkit-flex;
-	display: -moz-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	   -moz-box-orient: vertical;
-	   -moz-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
 	background: url(img/pilomaterial-bg.jpg) no-repeat center center;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-	     -o-background-size: cover;
-	        background-size: cover;
+	background-size: cover;
 }
 
 .carousel-inner {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	border: 10px solid white;
 }
 
@@ -313,7 +312,8 @@ div.my-card {
 	border-top: 2px solid grey;
 	border-bottom: 2px solid grey;
 	height: 400px;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 footer {
@@ -329,8 +329,22 @@ footer {
 	padding-top: 40px;
 	text-transform: uppercase;
 	font-family: 'Merriweather', sans-serif;
+	color: white;
+	padding: 15px 20px;
+}
+
+.footer-author {
+	padding-top: 40px;
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-family: 'Merriweather', sans-serif;
 	color: grey;
 	padding: 15px 20px;
+}
+
+.footer-author a:hover {
+	color: grey;
+	text-decoration: underline;
 }
 
 .footer-b2 {
@@ -347,6 +361,7 @@ footer {
 }
 
 .icon-block {
+	margin-top: 15px;
 	width: 100%;
 	margin-bottom: 35px;
 	text-align: center;
@@ -385,9 +400,12 @@ footer {
 	background-color: white;
 	padding: 10px;
 	border-radius: 15px;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	top: 50%;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
 }
 
 .review-background {
@@ -397,7 +415,8 @@ footer {
 .avatar {
 	display: block;
 	margin: 0 auto;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	border-radius: 50%;
 }
 
@@ -409,7 +428,11 @@ footer {
 	font-family: 'Merriweather', sans-serif;
 	margin: 10px 0;
 	border-radius: 25px;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	background: -webkit-gradient(linear, left bottom, left top, from(rgba(209, 214, 220, 0.46)), color-stop(30%, rgba(224, 224, 224, 1)), to(rgba(224, 224, 224, 0.3)));
+	background: -webkit-linear-gradient(bottom, rgba(209, 214, 220, 0.46), rgba(224, 224, 224, 1) 30%, rgba(224, 224, 224, 0.3));
+	background: -o-linear-gradient(bottom, rgba(209, 214, 220, 0.46), rgba(224, 224, 224, 1) 30%, rgba(224, 224, 224, 0.3));
 	background: linear-gradient(to top, rgba(209, 214, 220, 0.46), rgba(224, 224, 224, 1) 30%, rgba(224, 224, 224, 0.3));
 }
 
