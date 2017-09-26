@@ -446,7 +446,7 @@ footer {
 }
 
 .about-cont {
-	background: url('img/about-bg.jpg');
+	/*background: url('img/about-bg.jpg');*/
 	padding-top: 125px;
 	padding-bottom: 25px;
 }
